@@ -1,0 +1,35 @@
+/* 폰트 */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Russo+One&display=swap');
+  
+  *{
+    font-family: 'Gowun Batang', serif ;
+  }
+
+  /* 헤더영역 */
+  #header{
+           background-image: url(images/pink2.jfif);
+           background-repeat: no-repeat;
+           background-size: cover;
+  }
+/* 서치영역 */
+  #search{
+    background-image: url(images/search1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /* 로그인 색션 */
+#l-submit{
+  width: 250px;
+}
+
+#register{
+  width: 250px;  
+}
+
+#r-btn{
+  width: 100px;
+}
+

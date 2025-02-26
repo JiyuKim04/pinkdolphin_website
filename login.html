@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>로그인</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+   
+  <body>
+    <!-- 네브바 영역 시작 -->
+    <section>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Pink Dolphin</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="info2.html">기본 정보</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="online tour.html">온라인 투어</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="donate1.html">후원하기</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="consulting1.html">상담안내</a>
+              </li>
+              
+            </ul>
+            <span class="navbar btn">
+                <a class="nav-link" href="login.html">로그인</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+      </section>
+      <!-- 네브바 영역 끝 -->
+      
+    <!-- 로그인 색션 시작 -->
+       <section class="container text-center ">
+        <div class="row">
+
+        <div class="mt-5 py-5">
+          <h1 class="display-5 " style="text-shadow: 3px 3px #D8E6E7; letter-spacing: 0.1em;">로그인</h1>
+        </div>
+        
+        <form>
+        <div class="col-md-12 w-50 m-auto">
+            <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="user-id" autofocus placeholder="아이디" autocomplete="off" required>
+                <label for="user-id">아이디</label>
+              </div>
+        </div>
+
+        <div class="col-md-12 w-50 m-auto">
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="user-pw" placeholder="비밀번호" autocomplete="off" required>
+                 <label for="user-pw">비밀번호</label>
+               </div>
+        </div>
+
+        <div class="col-md-12 p-2">
+            <input id="l-submit" class="btn btn-outline-primary px-5 justify-content-centers" type="submit" value="로그인">
+        </div>
+    </form>
+    <div class="banner">
+
+        <button id="register" type="button" class="btn btn-outline-primary  px-5 " data-bs-toggle="modal" data-bs-target="#registerModal">
+            회원가입
+          </button>
+    
+          
+          <!-- 회원가입 모달창 시작 -->
+          <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="registerModalLabel"><b>Pink Dolphin</b></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class=>
+                            <div class="py-1">
+                                <label for="user-id"></label>
+                                <input type="text" id="user-id"  size="25" placeholder="아이디" required >
+                            </div>
+                            <div class="py-1">
+                                <label for="user-pw"></label>
+                                <input type="password" id="user-pw" size="25" placeholder="비밀번호" repuired>
+                            </div>
+                            <div class="py-1">
+                                <label for="user-name"></label>
+                                <input type="text" id="user-name" size="25" placeholder="이름" repuired>
+                            </div>
+                            <div class="py-1">
+                                 성별: 
+                               <label class="px-4">남<input type="radio" name="gender" value="man" checked></label>
+                                <label>여<input type="radio" name="gender" value="woman""></label>
+                            </div>
+                            <div class="py-1">
+                                <label for="user-birth"></label>
+                                <input type="text" id="user-birth" size="25" placeholder="생년월일  ex) YYYYMMDD" repuired>
+                            </div>
+                            <div class="py-1">
+                                <label for="user-email"></label>
+                                <input type="email" id="user-email" size="25" placeholder="이메일">
+                            </div>
+                            <div class="py-1">
+                                <label for="user-phone"></label>
+                                <input type="phone" id="user-phone" size="25" placeholder="연락처  ex) 000-0000-0000">
+                            </div>
+                            <div>
+                            <input id="r-btn" class="btn btn-outline-primary btn-sm me-1" type="submit" value="가입하기">
+                            <input id="r-btn" class="btn btn-outline-primary btn-sm ms-1" type="reset" value="취소하기">
+                          </div>
+                          </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">닫기</button>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- 회원가입 모달창 끝 -->
+
+    </div>
+       </section>
+<!-- 로그인 색션 끝 -->
+
+<!-- 풋터영역 시작 -->
+<div style="padding-top: 160px;">
+<footer class="text-dark text-center py-5" style="background-color: #77919d;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="index.html" class="link-dark text-decoration-none fs-5">
+          <h3 class="fw-bold my-3">Save pink dolphin</h3>
+          </a>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="fw-bold my-3"><i class="bi bi-envelope"></i> 이메일 주소</a></li></h5>
+        <p>chloe5460@swu.ac.kr</p>
+        <ul class="list-unstyled">
+                       
+        </ul>
+
+      </div>
+      
+    <div class="col-md-4">
+      <h5 class="fw-bold my-3"><i class="bi bi-telephone"></i> 대표 전화번호</a></li></h5>
+      <p>02-970-5114</p>
+      <ul class="list-unstyled">
+        <li>
+
+        </li>                
+      </ul>
+
+    </div>
+  </div>
+  <p class="my-3 text-muted"><i class="bi bi-c-circle">ALL RIGHT RESERVED BY SWU Team 3</i></p>
+</div>
+</footer>
+</div>
+<!-- 풋터영역 끝 -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
